@@ -5,6 +5,10 @@ export class GuessingNumberGame {
     constructor(private generator : RandomNumberGenerator) {}
 
     public guessNumber(guessedNumber : number) : string {
-        return 'You have won!';
+        const randomNumber = this.generator.generate();
+
+        if (guessedNumber === randomNumber) return 'You have won!';
+
+        return '';
     }
 }
