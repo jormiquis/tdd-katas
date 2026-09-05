@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5",
+    "vitest": "^4",
+    "@types/node": "^22"
+  }
+}
