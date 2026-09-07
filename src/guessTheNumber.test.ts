@@ -27,7 +27,7 @@ describe('Guess the number', () => {
     let playString: string = game.guessNumber(4);
     expect(playString).toBe('number is higher!');
 
-    playString = game.guessNumber(4);
-    expect(playString).toBe('number is higher!');
+    playString = game.guessNumber(6);
+    expect(playString).toBe('You have won!');
   });
 });
