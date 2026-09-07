@@ -30,4 +30,16 @@ describe('Guess the number', () => {
     playString = game.guessNumber(6);
     expect(playString).toBe('You have won!');
   });
+
+  it('should print a message of number is lower if number is higher and then correct number is winner', () => {
+    const generator : TestRandomNumberGenerator = new TestRandomNumberGenerator();
+
+    const game: GuessingNumberGame = new GuessingNumberGame(generator);
+
+    let playString: string = game.guessNumber(7);
+    expect(playString).toBe('number is lower!');
+
+    playString = game.guessNumber(6);
+    expect(playString).toBe('You have won!');
+  });
 });

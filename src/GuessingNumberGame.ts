@@ -11,6 +11,6 @@ export class GuessingNumberGame {
 
         if (guessedNumber < randomNumber) return 'number is higher!';
 
-        return '';
+        return "number is lower!";
     }
 }
